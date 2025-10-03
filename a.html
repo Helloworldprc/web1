@@ -1,53 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
-    <title>A Message to Myself</title>
+    <title>给自己的一段话</title>
     <style>
-        /* 导航栏样式 */
-        .navbar {
-            position: fixed;
-            top: 0;
-            left: 0;
-            right: 0;
-            background-color: #fff;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-            padding: 15px 30px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            z-index: 100;
-        }
-        .navbar .logo {
-            color: #0077cc;
-            font-size: 1.2rem;
-            font-weight: bold;
-            text-decoration: none;
-        }
-        .navbar .nav-links {
-            display: flex;
-            gap: 25px;
-        }
-        .navbar .nav-links a {
-            color: #333;
-            text-decoration: none;
-            transition: color 0.3s;
-        }
-        .navbar .nav-links a:hover {
-            color: #0077cc;
-        }
-
-        /* 原有样式调整（增加顶部间距避免内容被导航栏遮挡） */
         body {
             background-color: #f0f8ff;
-            font-family: Arial, sans-serif;
+            font-family: "Microsoft YaHei", Arial, sans-serif;
             display: flex;
             justify-content: center;
             align-items: center;
             height: 100vh;
-            margin: 0; /* 清除默认margin */
-            padding-top: 70px; /* 为导航栏预留空间 */
-            box-sizing: border-box; /* 确保padding不影响整体高度 */
         }
         .message-box {
             background: #fff;
@@ -62,22 +25,10 @@
     </style>
 </head>
 <body>
-    <!-- 导航栏 -->
-    <nav class="navbar">
-        <a href="#" class="logo">MySite</a>
-        <div class="nav-links">
-            <a href="#">Home</a>
-            <a href="#">About</a>
-            <a href="#">Messages</a>
-            <a href="#">Contact</a>
-        </div>
-    </nav>
-
-    <!-- 原有内容 -->
     <div class="message-box">
-        <h1>Hello, Myself!</h1>
-        <p>Remember to stay positive, keep learning, and believe in your abilities.<br>
-        Every day is a new opportunity to grow and achieve your goals!</p>
+        <h1>你好，自己！</h1>
+        <p>记得保持积极乐观，坚持学习，相信自己的能力。<br>
+        每一天都是成长和实现目标的新机会！</p>
     </div>
 </body>
 </html>
