@@ -55,6 +55,12 @@
             border-radius: 10px;
             box-shadow: 0 4px 16px rgba(0,0,0,0.12);
             text-align: center;
+            cursor: pointer; /* 鼠标悬停时显示手型指针 */
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .message-box:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(0,0,0,0.15);
         }
         .message-box h1 {
             color: #0077cc;
@@ -74,10 +80,21 @@
     </nav>
 
     <!-- 原有内容 -->
-    <div class="message-box">
+    <div class="message-box" id="messageBox">
         <h1>你好，自己！</h1>
         <p>记得保持积极乐观，坚持学习，相信自己的能力。<br>
         每一天都是成长和实现目标的新机会！</p>
     </div>
+
+    <script>
+        // 获取 message-box 元素
+        const messageBox = document.getElementById('messageBox');
+
+        // 为它添加点击事件
+        messageBox.addEventListener('click', function() {
+            // 跳转到 GitHub
+            window.location.href = 'https://github.com/';
+        });
+    </script>
 </body>
 </html>
